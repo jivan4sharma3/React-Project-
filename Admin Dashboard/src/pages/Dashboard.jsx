@@ -7,6 +7,7 @@ import Home from '../components/Home/Home'
 import Themes from '../context/Themes'
 import Product from '../components/Products/Product'
 import Order from '../components/order/Order'
+import Customers from '../components/customers/Customers'
 
 
 const Dashboard = () => {
@@ -28,7 +29,6 @@ const Dashboard = () => {
                     <Button icon="add_shopping_cart" nm="Products" setActiveSection={setActiveSection} />
                     <Button icon="groups" nm="Customers" setActiveSection={setActiveSection} />
                     <Button icon="orders" nm="Order" setActiveSection={setActiveSection} />
-                    <Button icon="featured_seasonal_and_gifts" nm="Shop" setActiveSection={setActiveSection} />
                 </div>
                 <div className={styles.asidebottom}>
                     <div>
@@ -59,11 +59,9 @@ const Dashboard = () => {
                         ) : activeSection == "Products" ? (
                             <Product/>
                         ) : activeSection == "Customers" ? (
-                            <div>This is Customers</div>
+                            <Customers/>
                         ) : activeSection == "Order" ? (
                             <Order/>
-                        ) : activeSection == "Shop" ? (
-                            <div>This is Shop</div>
                         ) : null
                     }
                 </div>
