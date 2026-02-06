@@ -1,0 +1,292 @@
+.whole {
+    height: 100%;
+    width: 100%;
+}
+
+.Pcontainer {
+    height: 96%;
+    width: 95%;
+    background-color: white;
+    margin: 25px auto;
+    position: relative;
+     border-radius: 14px;
+}
+
+.Pcontainerdark {
+    height: 96%;
+    width: 95%;
+    background-color: #0F1115;
+    margin: 25px auto;
+     border-radius: 14px;
+    position: relative;
+}
+
+.Ptop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.h2 {
+    padding: 5px 25px;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.addbtn {
+    background-color: #0000FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 20px;
+    margin: 20px;
+    border: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Add form css  */
+
+
+.formwrapper {
+    width: 400px;
+    margin: 60px auto;
+    /* background-color: #111827; */
+    background-color: #fff;
+    color: black;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 20px;
+    left: 400px;
+    border: 2px solid red;
+    backdrop-filter: blur(2px);
+    z-index: 10;
+
+}
+
+.formwrapperdark {
+    width: 400px;
+    margin: 60px auto;
+    background-color: #111827;
+    /* background-color: #fff; */
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 20px;
+    left: 400px;
+    backdrop-filter: blur(2px);
+    z-index: 10;
+
+}
+
+.cross {
+    cursor: pointer;
+    padding-bottom: 40px;
+}
+
+.formtitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formtitledark {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.formtitle h1 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.formtitledark h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.formgroup {
+    margin-bottom: 15px;
+}
+
+.formgroupdark {
+    margin-bottom: 15px;
+}
+
+.formgroup label {
+    display: block;
+    color: black;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.formgroupdark label {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.formgroup input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #374151;
+    /* background-color: #020617; */
+    background-color: #e1e1e188;
+    color: black;
+    outline: none;
+}
+
+
+.formgroupdark input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #374151;
+    background-color: #020617;
+    /* background-color: #e1e1e188; */
+    color: white;
+    outline: none;
+}
+
+.formgroup input:focus {
+    border-color: #3b82f6;
+}
+
+.formbtn {
+    margin-top: 20px;
+}
+
+.formbtn button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #3b82f6;
+    /* color: #ffffff; */
+    color: #000000;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formbtn button:hover {
+    background-color: #2563eb;
+}
+
+/* Table css of product  */
+
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Inter, sans-serif;
+}
+
+.productnamesdark span{
+    color:white
+}
+
+.thead th {
+    text-align: left;
+    font-size: 14px;
+    color: #666;
+    padding: 12px;
+    font-weight: 500;
+}
+
+.theaddark th {
+    text-align: left;
+    font-size: 14px;
+    color: white;
+    padding: 12px;
+    font-weight: 500;
+}
+
+.tbody tr {
+    /* display: flex; */
+    /* justify-content: center; */
+    border-top: 1px solid #eee;
+}
+
+.tbodydark tr {
+    border-top: 1px solid #333;
+}
+
+.tbody td {
+    padding: 14px 12px;
+    font-size: 14px;
+    color: #333;
+}
+
+.tbodydark td {
+    padding: 14px 12px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.productimg {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.orderid {
+    margin-left: 8px;
+    color: #555;
+}
+
+.customer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.status {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.status.paid {
+    background: #fff3b0;
+    color: #7a5a00;
+}
+
+.status.delivered {
+    background: #ffd7b5;
+    color: #8a3b00;
+}
+
+.total {
+    font-weight: 500;
+}
+
+.date {
+    color: #777;
+}
+
+.menu {
+    font-size: 20px;
+    cursor: pointer;
+    color: #777;
+}

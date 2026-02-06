@@ -1,0 +1,38 @@
+.card{
+    width: 45%;
+    height: 86px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.carddark{
+    width: 45%;
+    height: 86px;
+    background-color: #0F1115;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all ease-in-out .2s;    
+}
+
+.h3{
+    font-size: 22px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.display{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 18px;
+    align-items: center;
+}
+.p1{
+    font-size: 19px;
+    font-weight: 700;
+}
+.p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

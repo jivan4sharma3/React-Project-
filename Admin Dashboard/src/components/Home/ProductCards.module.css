@@ -1,0 +1,43 @@
+.card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    /* padding-bottom: 5px; */
+}
+
+.carddark{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    color: white;
+    /* padding-bottom: 5px; */
+    transition: all ease-in-out .2s;
+}
+
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-left: 15px;
+   gap: 8px;
+   align-items: start;
+}
+
+.earn{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    padding: 20px;
+    font-weight: bold;
+}
+

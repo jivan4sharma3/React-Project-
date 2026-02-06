@@ -1,0 +1,48 @@
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e1e1e188;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.topdark{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #161A20;
+    padding: 6px;
+    border-radius: 10px;
+    transition: all ease-in-out .2s;   
+}
+
+.input {
+    width: 276px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 15px;
+    color: gray;
+}
+
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.dark {
+    cursor: pointer;
+    transition: all ease-in-out .2s;    
+}
