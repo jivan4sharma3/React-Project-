@@ -9,29 +9,7 @@
     background-color: #f5f5f5;
 }
 
-.wholedark {
-    max-width: 100vw;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 10px;
-    height: 78vh;
-    background-color: #000033;
-    color: white;
-}
-
 .left {
-    width: 45%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 15px;
-    gap: 25px;
-}
-
-.leftdark {
     width: 45%;
     height: 100%;
     display: flex;
@@ -48,36 +26,12 @@
     line-height: 1;
 }
 
-.leftdark h2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 75px;
-    font-weight: 800;
-    line-height: 1;
-}
-
 .left p {
     font-size: 18px;
     color: gray;
 }
 
-.leftdark p {
-    font-size: 18px;
-    color: gray;
-}
-
-
 .left button {
-    height: 60px;
-    font-size: 20px;
-    width: 180px;
-    background-color: #4f46e5;
-    color: #fff;
-    border-radius: 50px;
-    border: 0;
-    cursor: pointer;
-}
-
-.leftdark button {
     height: 60px;
     font-size: 20px;
     width: 180px;
@@ -101,52 +55,61 @@
     padding: 40px 30px;
 }
 
-.rightdark {
-    width: 45%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 30px;
-}
-
 .right img {
     object-fit: cover;
     height: 100%;
     width: 100%;
 }
 
-.rightdark img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-}
 
+
+/* Tablet */
 @media (max-width: 1130px) {
     .whole {
         flex-direction: column;
-    }
-
-    .wholedark {
-        flex-direction: column;
+        height: auto;
+        /* allow content to grow */
+        padding: 40px 20px;
+        text-align: center;
     }
 
     .left {
-        width: 95%;
-        border: 2px solid red;
+        width: 90%;
+        margin-left: 0;
+        align-items: center;
     }
 
-    .leftdark {
-        width: 95%;
-        border: 2px solid red;
+    .right {
+        width: 90%;
+        height: auto;
+        padding: 20px 0;
     }
 
-    .leftdark h2 {
-        font-size: 45px;
+    .right img {
+        height: auto;
+        max-height: 500px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .left h2 {
+        font-size: 42px;
+        /* scale down only for mobile */
     }
 
-    .rightdark {
-        width: 50%;
+    .left p {
+        font-size: 16px;
     }
 
+    .left button {
+        height: 50px;
+        width: 160px;
+        font-size: 16px;
+    }
+
+    .right img {
+        max-height: 400px;
+    }
 }

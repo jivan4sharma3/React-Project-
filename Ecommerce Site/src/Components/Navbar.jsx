@@ -11,9 +11,9 @@ const Navbar = () => {
     return (
         <>
             <header>
-                <nav className={theme?"nav-dark":"nav"}>
-                    <div className={theme?"nav-container-dark":"nav-container"}>
-                        <div className={theme?"nav-left-container-dark":"nav-left-container"}>
+                <nav className={"nav"}>
+                    <div className={"nav-container"}>
+                        <div className={"nav-left-container"}>
                             <div className="navlogo">
                                 <img width={40} src={logo} alt="" />
                                 <h1>JStore</h1>
@@ -29,7 +29,7 @@ const Navbar = () => {
                             </svg>
                         </label>
 
-                        <div className={theme?"nav-right-container-dark":"nav-right-container"}>
+                        <div className={"nav-right-container"}>
                             <ul>
                                 <label for="sidebar-active" className="close-sidebar-button">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
@@ -48,13 +48,13 @@ const Navbar = () => {
 
                                 {/* Search container  */}
                                 <div className="search-container">
-                                    <span className={theme?"search-box-dark":"search-box"}>
+                                    <span className={"search-box"}>
                                         <lord-icon
                                             src="https://cdn.lordicon.com/wjyqkiew.json"
                                             trigger="hover"
                                             className="search-icon"
                                         ></lord-icon>
-                                        <input type="text" placeholder="Search..." className={theme?"search-input-dark":"search-input"} />
+                                        <input type="text" placeholder="Search..." className={"search-input"} />
                                     </span>
                                 </div>
 

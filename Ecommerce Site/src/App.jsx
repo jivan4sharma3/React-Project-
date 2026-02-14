@@ -7,10 +7,10 @@ const App = () => {
 
   const [data, setData] = useState("data dharai xa hoii")
 
-  const [theme, setTheme] = useState(false)
+
 
   return (
-    <Context.Provider value={{ data, theme ,setTheme }}>
+    <Context.Provider value={{ data }}>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />} />

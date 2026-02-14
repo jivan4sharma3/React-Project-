@@ -14,7 +14,7 @@ const Brand = () => {
     const{theme} = useContext(Context)
 
     return (
-        <div className={theme?style.brandcontainerdark:style.brandcontainer  }>
+        <div className={style.brandcontainer  }>
             {brands.map((brand, index) => (
                 <h1
                     key={index}

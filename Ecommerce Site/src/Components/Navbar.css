@@ -8,11 +8,7 @@ header {
     background-color: #fff;
     border-bottom: 2px solid #ffff;
 }
-.nav-dark {
-    height: 10vh;
-    background-color: #00002B; 
-    border-bottom: 2px solid #00002B;
-}
+
 .nav-container {
     max-width: 85vw;
     height: 10vh;
@@ -24,28 +20,8 @@ header {
     border-bottom: 2px solid #ffff;
 }
 
-.nav-container-dark {
-    max-width: 85vw;
-    height: 10vh;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  
-    background-color: #00002B;
-    border-bottom: 2px solid #00002B;
-}
-
 .nav-left-container h1 {
     color: #111111;
-    font-size: 30px;
-    font-weight: 600;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-}
-
-.nav-left-container-dark h1 {
-    color: #fff;
     font-size: 30px;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
@@ -68,23 +44,7 @@ header {
     gap: 10px;
 }
 
-.nav-right-container-dark ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    gap: 10px;
-}
-
 .nav-right-container ul li {
-    list-style: none;
-    padding: 15px;
-    font-size: 16px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-}
-
-.nav-right-container-dark ul li {
     list-style: none;
     padding: 15px;
     font-size: 16px;
@@ -97,10 +57,7 @@ header {
     color: black;
 }
 
-.nav-right-container-dark ul li a {
-    text-decoration: none;
-    color: #fff;
-}
+
 
 #sidebar-active {
     display: none;
@@ -136,17 +93,6 @@ header {
     transition: box-shadow 0.3s;
 }
 
-.search-box-dark {
-    width: 350px;
-    display: flex;
-    align-items: center;
-    background-color: #000033;
-    color: white;
-    border-radius: 30px;
-    padding: 5px 10px;
-    transition: box-shadow 0.3s;
-}
-
 .search-box:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -163,15 +109,6 @@ header {
     background: transparent;
     padding: 5px;
     font-size: 14px;
-}
-
-.search-input-dark {
-    border: none;
-    outline: none;
-    background: transparent;
-    padding: 5px;
-    font-size: 14px;
-    color: white;
 }
 
 /* Buttons Section */
@@ -217,15 +154,18 @@ header {
 }
 
 @media (max-width: 1130px) {
+    .nav-right-container{
+        background-color: #4f46e5;
+    }
     .nav-right-container ul {
         flex-direction: column;
         align-items: flex-start;
         position: fixed;
         top: 0;
         right: 0;
-        width: 500px;
+        width: 200px;
         height: 80vh;
-        background-color: #fff;
+        background-color: #4f46e5;
         color: black;
         transform: translateX(100%);
         transition: transform 0.4s ease;
@@ -237,7 +177,7 @@ header {
         width: 100%;
     }
 
-    .nav-left-container{
+    .nav-left-container {
         margin-left: 80px;
     }
 

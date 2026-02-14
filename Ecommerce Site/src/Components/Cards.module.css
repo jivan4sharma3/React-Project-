@@ -1,0 +1,157 @@
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    padding-top: 50px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;            /* Allows wrapping */
+  padding: 20px;
+  justify-content: space-evenly;
+}
+
+.card {
+  flex: 0 0 calc(22% - 20px);  /* 4 cards per row */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image */
+.imgcard{
+    width: 100%;
+}
+.imgcard img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+/* Title */
+.card h3 {
+  margin: 12px 0 8px;
+  font-size: 18px;
+}
+
+/* Rating */
+.rate {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgb(160, 160, 8);
+  font-weight: 500;
+}
+
+/* Price */
+.price {
+  margin: 10px 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.price span:first-child {
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.price span:last-child {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Buttons */
+.btns {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.addcard {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+
+.buy{
+    flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #4f46e5;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.buy:hover{
+     background-color: #625af6;
+}
+
+.addcard:hover {
+    background-color: #4f46e5;
+    color: white;
+
+}
+
+.viewbtn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.viewall {
+  padding: 10px 40px;
+  font-size: 18px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.3s;
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+
+.viewall:hover {
+    background-color: #4f46e5;
+    color: white;
+
+}
+
+/* Tablet - 2 cards */
+@media (max-width: 992px) {
+  .card {
+    flex: 0 0 calc(50% - 10px);
+  }
+}
+
+/* Mobile - 1 card */
+@media (max-width: 576px) {
+  .card {
+    flex: 0 0 100%;
+  }
+}
