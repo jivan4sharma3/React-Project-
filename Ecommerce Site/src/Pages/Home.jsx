@@ -8,6 +8,8 @@ import p1 from '../assets/p1.png'
 import p2 from '../assets/p2.png'
 import p3 from '../assets/p3.png'
 import p4 from '../assets/p4.png'
+import Category from '../Components/Home/Category'
+import Testimonial from '../Components/Testimonial'
 
 const Home = (props) => {
 
@@ -56,6 +58,8 @@ const Home = (props) => {
       <Cards detailsCard={cardsDlts} head="NEW ARRIVALS" />
       <hr style={{width:"90%",margin:"auto",marginTop:"10px",color:"gray"}} />
       <Cards detailsCard={cardsDlts} head="TOP SELLING" />
+      <Category/>
+      <Testimonial/>
     </>
   )
 }
